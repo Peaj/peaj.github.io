@@ -19,7 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Creating and solving interesting problems in Games, XR and Education
 #twitter_username: username
 github_username: Peaj
-minimal_mistakes_skin: neon
+minimal_mistakes_skin: dark
 search: true
 
 # Build settings
@@ -59,8 +59,7 @@ author:
   name   : "Pascal Jacob"
   avatar : "/assets/images/bio-photo.png"
   bio    : >- 
-    Versatile and creative problem solver with over 16 years of experience in software development, 
-    including a decade dedicated to game development.
+    Creating and solving interesting problems in Games, XR and Education
   links:
     # - label: "Website"
     #   icon: "fas fa-fw fa-link"
