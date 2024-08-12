@@ -16,8 +16,7 @@
 title: Peaj
 email:
 description: >- # this means to ignore newlines until "baseurl:"
-  Versatile and creative problem solver with over 16 years of experience in software development, 
-  including a decade dedicated to game development. 
+  Creating and solving interesting problems in Games, XR and Education
 #twitter_username: username
 github_username: Peaj
 minimal_mistakes_skin: neon
@@ -58,7 +57,7 @@ plugins:
 
 author:
   name   : "Pascal Jacob"
-  avatar : "/assets/images/bio-photo.jpg"
+  avatar : "/assets/images/bio-photo.png"
   bio    : >- 
     Versatile and creative problem solver with over 16 years of experience in software development, 
     including a decade dedicated to game development.
