@@ -59,8 +59,9 @@ plugins:
 author:
   name   : "Pascal Jacob"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : >- Versatile and creative problem solver with over 16 years of experience in software development, 
-              including a decade dedicated to game development.
+  bio    : >- 
+    Versatile and creative problem solver with over 16 years of experience in software development, 
+    including a decade dedicated to game development.
   links:
     # - label: "Website"
     #   icon: "fas fa-fw fa-link"
