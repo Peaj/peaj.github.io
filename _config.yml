@@ -22,6 +22,7 @@ github_username: Peaj
 minimal_mistakes_skin: dark
 search: true
 enable_copy_code_button: true
+future: true
 
 # TODO: SEO - https://mmistakes.github.io/minimal-mistakes/docs/configuration/#seo-social-sharing-and-analytics-settings
 # TODO: Analytics
