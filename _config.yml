@@ -17,6 +17,7 @@ title: Peaj
 email:
 description: >- # this means to ignore newlines until "baseurl:"
   Creating and solving interesting problems in Games, XR and Education
+url: https://www.peaj.de
 #twitter_username: username
 github_username: Peaj
 minimal_mistakes_skin: dark
