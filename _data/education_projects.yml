@@ -1,0 +1,23 @@
+- name: "DeskGrid"
+  project_url: "https://www.peaj.de/DeskGrid/"
+  github_url: "https://github.com/Peaj/DeskGrid"
+  image_url: "https://opengraph.githubassets.com/1/Peaj/DeskGrid"
+  description: "A classroom seating planner for arranging desks and testing layouts."
+
+- name: "binary-bits-101"
+  project_url: "https://www.peaj.de/binary-bits-101/"
+  github_url: "https://github.com/Peaj/binary-bits-101"
+  image_url: "https://opengraph.githubassets.com/1/Peaj/binary-bits-101"
+  description: "A hands-on learning game for understanding binary numbers and bitwise operations."
+
+- name: "Fractals"
+  project_url: "https://www.peaj.de/Fractals/"
+  github_url: "https://github.com/Peaj/Fractals"
+  image_url: "https://opengraph.githubassets.com/1/Peaj/Fractals"
+  description: "An educational web app for creating, exploring, and sharing fractal patterns."
+
+- name: "Daylength"
+  project_url: "https://peaj.github.io/Daylength/"
+  github_url: "https://github.com/Peaj/Daylength"
+  image_url: "https://opengraph.githubassets.com/1/Peaj/Daylength"
+  description: "A 3D educational project that illustrates how day length changes throughout the year."
