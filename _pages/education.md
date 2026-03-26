@@ -22,18 +22,34 @@ permalink: /education/
     box-shadow: 0 18px 50px rgba(0, 0, 0, 0.18);
   }
 
+  .education-project-media {
+    display: grid;
+    gap: 1rem;
+  }
+
   .education-project-image {
     display: block;
     width: 100%;
     border-radius: 12px;
     overflow: hidden;
     background: rgba(255, 255, 255, 0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .education-project-image:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.24);
   }
 
   .education-project-image img {
     display: block;
     width: 100%;
     height: auto;
+  }
+
+  .education-project-preview img {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
   }
 
   .education-project-card h2 {
@@ -64,9 +80,31 @@ permalink: /education/
     color: #1f1f1f;
   }
 
-  .education-project-actions a:last-child {
-    border: 1px solid rgba(255, 255, 255, 0.18);
+  .education-project-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.72);
+  }
+
+  .education-project-meta a {
     color: inherit;
+    text-decoration: none;
+  }
+
+  .education-project-meta a:hover {
+    color: #ffb347;
+  }
+
+  .education-project-media-label {
+    margin: 0 0 0.35rem;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.62);
   }
 
   @media (max-width: 800px) {
@@ -81,15 +119,29 @@ This page collects the open source education projects from the [GitHub repositor
 <div class="education-project-list">
   {% for project in site.data.education_projects %}
     <article class="education-project-card">
-      <a class="education-project-image" href="{{ project.project_url }}" target="_blank" rel="noopener noreferrer">
-        <img src="{{ project.image_url }}" alt="{{ project.name }} project preview">
-      </a>
+      <div class="education-project-media">
+        <div>
+          <p class="education-project-media-label">Repository</p>
+          <a class="education-project-image" href="{{ project.github_url }}" target="_blank" rel="noopener noreferrer">
+            <img src="{{ project.repo_card_url }}" alt="{{ project.name }} GitHub repository card">
+          </a>
+        </div>
+        <div>
+          <p class="education-project-media-label">Live preview</p>
+          <a class="education-project-image education-project-preview" href="{{ project.project_url }}" target="_blank" rel="noopener noreferrer">
+            <img src="{{ project.preview_image_url }}" alt="{{ project.name }} live project preview">
+          </a>
+        </div>
+      </div>
       <div>
         <h2>{{ project.name }}</h2>
+        <div class="education-project-meta">
+          <a href="{{ project.github_url }}" target="_blank" rel="noopener noreferrer">GitHub repository</a>
+          <a href="{{ project.project_url }}" target="_blank" rel="noopener noreferrer">Live project</a>
+        </div>
         <p>{{ project.description }}</p>
         <div class="education-project-actions">
           <a href="{{ project.project_url }}" target="_blank" rel="noopener noreferrer">Open project</a>
-          <a href="{{ project.github_url }}" target="_blank" rel="noopener noreferrer">View on GitHub</a>
         </div>
       </div>
     </article>
