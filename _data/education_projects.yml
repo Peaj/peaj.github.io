@@ -13,7 +13,7 @@
   description: "A hands-on learning game for understanding binary numbers and bitwise operations."
 
 - name: "Fractals"
-  project_url: "https://www.peaj.de/Fractals/"
+  project_url: "https://www.peaj.de/Fractals/index.html?l=3&s0=0.5&a0=0&x0=0&y0=0&c0=ff0000&s1=0.5&a1=0&x1=1&y1=0&c1=00ff00&s2=0.5&a2=0&x2=0.5&y2=1&c2=0000ff"
   github_url: "https://github.com/Peaj/Fractals"
   repo_card_url: "https://opengraph.githubassets.com/1/Peaj/Fractals"
   preview_image_url: "/assets/images/education/fractals-preview.png"
