@@ -80,33 +80,6 @@ permalink: /education/
     color: #1f1f1f;
   }
 
-  .education-project-meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem 1rem;
-    margin-bottom: 1rem;
-    font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.72);
-  }
-
-  .education-project-meta a {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  .education-project-meta a:hover {
-    color: #ffb347;
-  }
-
-  .education-project-media-label {
-    margin: 0 0 0.35rem;
-    font-size: 0.78rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.62);
-  }
-
   @media (max-width: 800px) {
     .education-project-card {
       grid-template-columns: 1fr;
@@ -120,28 +93,18 @@ This page collects the open source education projects from the [GitHub repositor
   {% for project in site.data.education_projects %}
     <article class="education-project-card">
       <div class="education-project-media">
-        <div>
-          <p class="education-project-media-label">Repository</p>
-          <a class="education-project-image" href="{{ project.github_url }}" target="_blank" rel="noopener noreferrer">
-            <img src="{{ project.repo_card_url }}" alt="{{ project.name }} GitHub repository card">
-          </a>
-        </div>
-        <div>
-          <p class="education-project-media-label">Live preview</p>
-          <a class="education-project-image education-project-preview" href="{{ project.project_url }}" target="_blank" rel="noopener noreferrer">
-            <img src="{{ project.preview_image_url }}" alt="{{ project.name }} live project preview">
-          </a>
-        </div>
+        <a class="education-project-image" href="{{ project.github_url }}" target="_blank" rel="noopener noreferrer">
+          <img src="{{ project.repo_card_url }}" alt="{{ project.name }} GitHub repository card">
+        </a>
+        <a class="education-project-image education-project-preview" href="{{ project.project_url }}" target="_blank" rel="noopener noreferrer">
+          <img src="{{ project.preview_image_url }}" alt="{{ project.name }} live project preview">
+        </a>
       </div>
       <div>
         <h2>{{ project.name }}</h2>
-        <div class="education-project-meta">
-          <a href="{{ project.github_url }}" target="_blank" rel="noopener noreferrer">GitHub repository</a>
-          <a href="{{ project.project_url }}" target="_blank" rel="noopener noreferrer">Live project</a>
-        </div>
         <p>{{ project.description }}</p>
         <div class="education-project-actions">
-          <a href="{{ project.project_url }}" target="_blank" rel="noopener noreferrer">Open project</a>
+          <a href="{{ project.project_url }}" target="_blank" rel="noopener noreferrer">Try it out</a>
         </div>
       </div>
     </article>
