@@ -87,7 +87,7 @@ permalink: /education/
   }
 </style>
 
-This page collects the open source education projects from the [GitHub repository search](https://github.com/Peaj?tab=repositories&q=education&type=public&language=&sort=) and links each one to its live version and source code.
+This is an overview of my educational open source projects
 
 <div class="education-project-list">
   {% for project in site.data.education_projects %}
@@ -110,3 +110,5 @@ This page collects the open source education projects from the [GitHub repositor
     </article>
   {% endfor %}
 </div>
+
+All of my education projects on [GitHub](https://github.com/Peaj?tab=repositories&q=education&type=public&language=&sort=)
